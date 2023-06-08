@@ -1,6 +1,10 @@
 class MySolution {
-  countDownSum(num) {
+   countDownSum(num) {
     // Insert code here;
+    if(num===0){
+      return num;
+    }
+      return num + countDownSum(num-1);
   }
 }
 
